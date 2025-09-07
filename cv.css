@@ -467,73 +467,52 @@ section {
 }
 
 @media (max-width: 1024px) {
-    .semuanya {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .main {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
     }
 
     .main .foto img {
-        width: 300px;
-        height: auto;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
-    .main .sampingfoto {
-        width: 90%;
+    .isiproject, .isigallery {
+        flex-wrap: wrap;
     }
 
-    .aboutme {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .isibackground {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .isiproject,
-    .isigallery {
-        justify-content: center;
-    }
-
-    .slideproject,
-    .slidegallery {
+    .slideproject, .slidegallery {
         width: 45%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .foto img {
+        max-width: 250px;
+    }
+
+    .isiproject, .isigallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slideproject, .slidegallery {
+        width: 100%;
+    }
+
     nav .semuanya {
         flex-direction: column;
         gap: 10px;
     }
 
-    .semuanya .links {
+    nav .semuanya .links {
         flex-direction: column;
-        gap: 1rem;
-    }
-
-    .main .foto img {
-        width: 250px;
-        height: auto;
-    }
-
-    .sampingfoto h1 {
-        font-size: 1.5rem;
-    }
-
-    .heading {
-        font-size: 2.5rem;
-    }
-
-    .slideproject,
-    .slidegallery {
-        width: 90%;
+        gap: 10px;
     }
 }
